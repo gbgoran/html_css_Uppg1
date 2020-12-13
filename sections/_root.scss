@@ -1,4 +1,5 @@
 /* mobile first - Standard Styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -126,163 +127,67 @@ a:hover {
 }
 @media (min-width: 992px) { #mainmenu .container .menu button { display: none; } }
 
-/*#About Us*/
-#AboutUs .Container {
-    display: flex;
-    justify-content: space-between;
-    height: 810px;
-  }
-  
-  #AboutUs .Image-AboutUs {
-    padding-top: 5.3rem;
-    padding-right: 8rem;
-  }
-  
-  @media (max-width: 1140px) {
-    #AboutUs .Image-AboutUs {
-      display: none;
-    }
-  }
-  
-  #AboutUs .Text-AboutUs {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-right: 5rem;
-    padding-left: 8rem;
-  }
-  
-  @media (max-width: 500px) {
-    #AboutUs .Text-AboutUs {
-      padding-top: 0%;
-      margin-top: -15px;
-    }
-  }
-  
-  @media (min-width: 800px) {
-    #AboutUs .Text-AboutUs {
-      padding-left: 2.5rem;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    #AboutUs .Text-AboutUs {
-      padding-left: 3.5rem;
-      text-align: center;
-    }
-  }
-  
-  #AboutUs .Text-AboutUs p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-  }
-  
-  @media (max-width: 500px) {
-    #AboutUs .Text-AboutUs p {
-      font-size: 12px;
-    }
-  }
-  
-  #AboutUs .Header-AboutUs {
-    font-family: 'Roboto Slab', serif;
-    font-size: 35px;
-    border-bottom: 4px solid #25E6C8;
-  }
-  
-  @media (max-width: 500px) {
-    #AboutUs .Header-AboutUs {
-      font-size: 20px;
-    }
-  }
-  
-  #AboutUs .AboutUs-Text-Blue {
-    color: #2BAAEC;
-  }
-  
-  #AboutUs .Statistic-AboutUs {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #AboutUs .Statistic-Box-AboutUs .Number {
-    color: #2BAAEC;
-    font-family: 'Roboto Slab', serif;
-    font-size: 40px;
-  }
-  
-  @media (max-width: 500px) {
-    #AboutUs .Statistic-Box-AboutUs .Number {
-      font-size: 20px;
-    }
-  }
-  
-  #AboutUs .Statistic-Box-AboutUs .Description {
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-  }
-  
-  @media (max-width: 500px) {
-    #AboutUs .Statistic-Box-AboutUs .Description {
-      font-size: 12px;
-    }
-  }
-
-
-/*#Services*/
-
-
 /* #showcase */
 #showcase {
-    background-color: #DEDEDE;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    max-height: 700px;
+  background-color: #DEDEDE;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-height: 700px;
+  
 
-    @media(min-width: 992px) {
-        padding-top: 1.3125rem;
-        padding-bottom: 0;
-    }
+  @media(min-width: 992px) {
+      padding-top: 1.3125rem;
+      padding-bottom: 0;
+  }
 
-    .flex-center {
-        display: flex;
+  .flex-center {
+      display: flex;
+      
 
-        .content-left {
-            display: none;
-            margin-right: 2rem;
-            
+      .content-left {
+          display: none;
+          margin-right: 3rem;
+          
 
-            img {
-                margin-left: -147px;
-                margin-right: 150px;
-            }
+          img {
+              margin-left: -147px;
+              margin-right: 150px;
+          }
 
-        @media (min-width: 992px) {
-            display: block;
-        }
-    }
+      @media (min-width: 992px) {
+          display: block;
+      }
+  }
 
-    .content-right {
-        text-align: center;
-        margin-left: -6rem;
-        @media (min-width: 992px) {
-            text-align: left;
-        }
+  .content-right {
+      text-align: center;
+      margin-left: -6rem;
+      @media (min-width: 992px) {
+          text-align: left;
+      }
 
-        h1 {
-            font-family: 'Roboto Slab', serif;
-            padding-bottom: .5rem;
+      h1 {
+          font-family: 'Roboto Slab', serif;
+          padding-bottom: .5rem;
 
-            @media (min-width: 768px) {
-                font-size: 3.75rem;
-            }
-        }
+          @media (min-width: 768px) {
+              font-size: 3.75rem;
+          }
+      }
 
+      .paragraph {
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.125rem;
+          padding-bottom: 2.5rem;
+          margin: 5rem;
+      }
+      @media (min-width: 768px) {
         .paragraph {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.125rem;
-            padding-bottom: 2.5rem;
+          margin: 0rem;
         }
-    }
-
+      }
+  }
+  
     .container {
         @media (min-width: 768px) {
             max-width: 992px;
@@ -291,27 +196,124 @@ a:hover {
         @media (min-width: 1920px) {
             max-width: 1410px;
         }
-   }
-   
-   #btn {
-       background-color: #25E6C8;
-       color: #ffffff;
-       font-weight: bold;
-       font-size: 1.125rem;
-       padding: 1.4375rem 3.375rem;
-       border-radius: 10px;
-       border-color:  #25E6C8;
-   
-       &:hover {
-           background-color: #2BAAEC;
-           color: #ffffff; 
-       }
-   }
-        
     }
-
-    
+  
+ 
+ #btn {
+     background-color: #25E6C8;
+     color: #ffffff;
+     font-weight: bold;
+     font-size: 1.125rem;
+     padding: 1.4375rem 3.375rem;
+     border-radius: 10px;
+     border-color:  #25E6C8;
+ 
+     &:hover {
+         background-color: #2BAAEC;
+         color: #ffffff; 
+     }
+ }
+      
+  }    
 } 
+
+
+/*#About Us*/
+#aboutus {
+  // margin-top: 150px;
+  
+  
+    .container {
+                
+        .flex-left {
+            // margin-top: 15px;
+            display: flex;  
+
+              .box {
+                width: 360px;
+              
+                  h1 {
+                    font-size: 1.5rem;                    
+                  }
+                
+                  .clinic {
+                    color: #2BAAEC;
+                  }
+                  p {
+                    font-family: 'Roboto';
+                    font-size: 1rem;
+                  }
+                  .najs {
+                    display: none;
+                  }
+              }
+              @media (min-width: 992px) {
+                
+                .box {                  
+                  border: 2px solid rgb(41, 141, 41);
+                  width: 900px;
+                  height: 600px;
+
+                  .najs {
+                    display: flex;
+                    justify-content: space-between ;
+                    
+                    div {
+                      color: #2BAAEC;
+                      font-family: 'Roboto Slab';
+                      font-size: 2rem;
+                      p {
+                        color: black;
+                      }
+                    }
+                  }
+                }
+                .flex-right {
+                  display: block;
+                  margin-bottom: -1.4rem;
+                  img {
+                    height: 700px;
+                    // margin-left: 50px;
+                    // padding: 3rem;
+                  }
+                }
+              }      
+        }
+        .flex-right   {
+          display: none;            
+          }
+        
+          @media (min-width: 768px) {
+            .flex-right {
+              display: block;
+              img {
+                height: 400px;
+                margin-left: 50px;
+                padding: 1rem;
+              }
+            }
+          }
+          @media (min-width: 992px) {
+            .flex-right {
+              display: block;
+              img {
+                height: 500px;
+                margin-left: 50px;
+                padding: 1rem;
+              }
+            }
+          }      
+    }
+  
+
+}
+
+
+
+/*#Services*/
+
+
+
 
 /* #Appointment */
 #appointment  {
@@ -328,7 +330,7 @@ a:hover {
 /*#area*/#areaA {    
                 font-size: 1rem;
                 text-align: center;
-                margin: 3.5rem;
+                margin: 1rem;
             }
         @media (min-width: 768px) {
             #areaA {

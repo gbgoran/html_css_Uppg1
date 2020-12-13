@@ -1,4 +1,5 @@
 /* mobile first - Standard Styling */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -159,107 +160,6 @@ a:hover {
   }
 }
 
-/*#About Us*/
-#AboutUs .Container {
-  display: flex;
-  justify-content: space-between;
-  height: 810px;
-}
-
-#AboutUs .Image-AboutUs {
-  padding-top: 5.3rem;
-  padding-right: 8rem;
-}
-
-@media (max-width: 1140px) {
-  #AboutUs .Image-AboutUs {
-    display: none;
-  }
-}
-
-#AboutUs .Text-AboutUs {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-right: 5rem;
-  padding-left: 8rem;
-}
-
-@media (max-width: 500px) {
-  #AboutUs .Text-AboutUs {
-    padding-top: 0%;
-    margin-top: -15px;
-  }
-}
-
-@media (min-width: 800px) {
-  #AboutUs .Text-AboutUs {
-    padding-left: 2.5rem;
-  }
-}
-
-@media (max-width: 500px) {
-  #AboutUs .Text-AboutUs {
-    padding-left: 3.5rem;
-    text-align: center;
-  }
-}
-
-#AboutUs .Text-AboutUs p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-}
-
-@media (max-width: 500px) {
-  #AboutUs .Text-AboutUs p {
-    font-size: 12px;
-  }
-}
-
-#AboutUs .Header-AboutUs {
-  font-family: 'Roboto Slab', serif;
-  font-size: 35px;
-  border-bottom: 4px solid #25E6C8;
-}
-
-@media (max-width: 500px) {
-  #AboutUs .Header-AboutUs {
-    font-size: 20px;
-  }
-}
-
-#AboutUs .AboutUs-Text-Blue {
-  color: #2BAAEC;
-}
-
-#AboutUs .Statistic-AboutUs {
-  display: flex;
-  justify-content: space-between;
-}
-
-#AboutUs .Statistic-Box-AboutUs .Number {
-  color: #2BAAEC;
-  font-family: 'Roboto Slab', serif;
-  font-size: 40px;
-}
-
-@media (max-width: 500px) {
-  #AboutUs .Statistic-Box-AboutUs .Number {
-    font-size: 20px;
-  }
-}
-
-#AboutUs .Statistic-Box-AboutUs .Description {
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-}
-
-@media (max-width: 500px) {
-  #AboutUs .Statistic-Box-AboutUs .Description {
-    font-size: 12px;
-  }
-}
-
-/*#Services*/
 /* #showcase */
 #showcase {
   background-color: #DEDEDE;
@@ -281,7 +181,7 @@ a:hover {
 
 #showcase .flex-center .content-left {
   display: none;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 #showcase .flex-center .content-left img {
@@ -321,6 +221,13 @@ a:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 1.125rem;
   padding-bottom: 2.5rem;
+  margin: 5rem;
+}
+
+@media (min-width: 768px) {
+  #showcase .flex-center .content-right .paragraph {
+    margin: 0rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -350,6 +257,86 @@ a:hover {
   color: #ffffff;
 }
 
+/*#About Us*/
+#aboutus .container .flex-left {
+  display: flex;
+}
+
+#aboutus .container .flex-left .box {
+  width: 360px;
+}
+
+#aboutus .container .flex-left .box h1 {
+  font-size: 1.5rem;
+}
+
+#aboutus .container .flex-left .box .clinic {
+  color: #2BAAEC;
+}
+
+#aboutus .container .flex-left .box p {
+  font-family: 'Roboto';
+  font-size: 1rem;
+}
+
+#aboutus .container .flex-left .box .najs {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #aboutus .container .flex-left .box {
+    border: 2px solid #298d29;
+    width: 900px;
+    height: 600px;
+  }
+  #aboutus .container .flex-left .box .najs {
+    display: flex;
+    justify-content: space-between;
+  }
+  #aboutus .container .flex-left .box .najs div {
+    color: #2BAAEC;
+    font-family: 'Roboto Slab';
+    font-size: 2rem;
+  }
+  #aboutus .container .flex-left .box .najs div p {
+    color: black;
+  }
+  #aboutus .container .flex-left .flex-right {
+    display: block;
+    margin-bottom: -1.4rem;
+  }
+  #aboutus .container .flex-left .flex-right img {
+    height: 700px;
+  }
+}
+
+#aboutus .container .flex-right {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #aboutus .container .flex-right {
+    display: block;
+  }
+  #aboutus .container .flex-right img {
+    height: 400px;
+    margin-left: 50px;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #aboutus .container .flex-right {
+    display: block;
+  }
+  #aboutus .container .flex-right img {
+    height: 500px;
+    margin-left: 50px;
+    padding: 1rem;
+  }
+}
+
+/*#Services*/
 /* #Appointment */
 #appointment {
   margin: 0;
@@ -368,7 +355,7 @@ a:hover {
 #appointment .app-flex #areaA {
   font-size: 1rem;
   text-align: center;
-  margin: 3.5rem;
+  margin: 1rem;
 }
 
 @media (min-width: 768px) {
